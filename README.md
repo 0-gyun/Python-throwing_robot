@@ -9,7 +9,7 @@ When robot tossing a ball, goal post senses and decides the success or failure.\
 If robot scores a goal, arduino connected with sensor sends the "Goal" and result is recorded as integer 1.\
 If robt fails, result is recorded as integer 0.\
 6 parameters of robot policies and 2 goal post position (X, Y) is the 8 learning input (8 Dim).\
-Output is Success or Failure (1 or 0) (l Dim).\
+Output is Success or Failure (1 or 0) (1 Dim).\
 BCE is effective to binary output learning like this learning molel.\
 In policy searching code, robot selects the policy that has max probability of success.\
 So robot is trained to direction of success.
