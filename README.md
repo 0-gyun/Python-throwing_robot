@@ -1,15 +1,18 @@
 # Tossing_robot
 
-This project is machine learning of tossing ball.\
-Artificial neaural network(ANN) is trained Binary Cross Entrophy(BCE) as loss.\
-Robot has 3 DoF that is similar with huhan's arm.\
-Robot learns the 6 parameters, 3 joint angles and 3 joint angular velocity.\
-Robot operate with these 6 parameters.\
-When robot tossing a ball, goal post senses and decides the success or failure.\
-If robot scores a goal, arduino connected with sensor sends the "Goal" and result is recorded as integer 1.\
-If robt fails, result is recorded as integer 0.\
-6 parameters of robot policies and 2 goal post position (X, Y) is the 8 learning input (8 Dim).\
-Output is Success or Failure (1 or 0) (1 Dim).\
-BCE is effective to binary output learning like this learning molel.\
-In policy searching code, robot selects the policy that has max probability of success.\
-So robot is trained to direction of success.
+This is a deep reinforcement learning project for tossing robot.\
+The robot has 3 DoF that is similar with huhan's arm.\
+It learns 6 parameters, 3 joint angles and 3 joint angular velocities.\
+It operates with these 6 parameters.\
+When the robot throws a ball, goal post senses success or failure.\
+If it is a success, arduino connected with impact sensor sends the "Goal" and result is recorded as integer 1.\
+If else, result is recorded as integer 0.\
+Artificial neaural network(ANN) is trained by Binary Cross Entrophy(BCE) as loss.\
+ANN input consists of 8 dimensions; the 6 parameters of robot policies and 2 goal post position (X, Y).\
+Output consists of 1 dimension; Success or Failure (1 or 0).\
+BCE is effective for binary output learning model.\
+In policy searching step, the robot selects the policy with max probability of success.\
+So robot is trained to direction of success.\\
+
+Deep Reinforcement Learning of Ball Throwing Robot’s Policy Prediction.\
+DOI : 10.7746/jkros.2020.15.4.398.\
